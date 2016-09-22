@@ -32,7 +32,7 @@ Por favor altere o método abaixo, pois ele é responsável em buscar as informa
 	}
 	
 
-No metodo abaixo, é necessário buscar o endereço do cliente, que no meu caso, está em uma tabela separada. Por isto, é provavel que seja necessário alterar esta parte também:
+No método abaixo, é necessário buscar o endereço do cliente, que no meu caso, está em uma tabela separada. Por isto, é provavel que seja necessário alterar esta parte também:
 
 	protected function gerarSegmentos($boleto) {
 		
