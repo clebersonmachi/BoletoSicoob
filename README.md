@@ -4,7 +4,7 @@ Gerar arquivo de remessa CNAB400 para a Sicoob (apenas cobrança no momento)
 ## Instruções
 Utilizado Models do Laravel 3.2.14, mas podem ser substituídos facilmente por uma consulta normal ao banco de dados.
 
-### vídeo com instruções
+### Vídeo com instruções
 https://youtu.be/gPkoPeXjec8
 
 ### Alterações necessárias
