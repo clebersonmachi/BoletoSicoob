@@ -58,24 +58,24 @@ Se você não está utilizando o Laravel, por favor substitua a Classe File pela
 
 #### Criar pastas
 
-File::mkdir($pasta);
+	File::mkdir($pasta);
 
 substituir por: 
 
-mkdir($pasta, 0700);
+	mkdir($pasta, 0700);
 
 #### Criar arquivo
 
-File::put($arquivo, $arquivoConteudo);
+	File::put($arquivo, $arquivoConteudo);
 
 substituir por: 
 
-file_put_contents($arquivo, $arquivoConteudo, LOCK_EX);
+	file_put_contents($arquivo, $arquivoConteudo, LOCK_EX);
 
 
 ### Modo de utilizar
 
-BoletoSicoob::criarArquivoRemessa();
+	BoletoSicoob::criarArquivoRemessa();
 
 
 ## Softwares Utilizados
