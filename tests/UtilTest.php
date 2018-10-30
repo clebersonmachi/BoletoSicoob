@@ -1,5 +1,8 @@
 <?php
 
+namespace ClebersonMachi\Tests;
+
+use ClebersonMachi\Util;
 use PHPUnit\Framework\TestCase;
 
 class UtilTest extends TestCase
@@ -25,7 +28,7 @@ class UtilTest extends TestCase
 
     /**
      * @test
-     * @covers \Util::apenasNumeros
+     * @covers \ClebersonMachi\Util::apenasNumeros
      */
     public function apenasNumeroRetornaSomenteNumeros()
     {
@@ -37,7 +40,7 @@ class UtilTest extends TestCase
 
     /**
      * @test
-     * @covers \Util::formataNumDoc
+     * @covers \ClebersonMachi\Util::formataNumDoc
      */
     public function formataNumDocPreencheComZerosEsquerda()
     {

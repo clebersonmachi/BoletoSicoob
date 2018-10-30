@@ -1,11 +1,12 @@
 <?php
 
+namespace ClebersonMachi;
+
 class IntegracaoFinanceiro 
 {
     /**
     * Cria o model Financeiro
     * @return QueryBuilder
-    * --------------------------------------------------------------------
     */
     public static function mkFinanceiroModel($completo = true)
     {
@@ -26,7 +27,6 @@ class IntegracaoFinanceiro
     /**
     * Verifica quantos boletos estão pendentes
     * @return Number
-    * --------------------------------------------------------------------
     */
     public static function getPendencias()
     {

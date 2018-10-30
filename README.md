@@ -81,9 +81,9 @@ substituir por:
 ### Modo de utilizar
 
 ```php
-$boletos = IntegracaoFinanceiro::mkFinanceiroModel();
+$boletos = \ClebersonMachi\IntegracaoFinanceiro::mkFinanceiroModel();
 
-BoletoSicoob::criarArquivoRemessa($boletos);
+\ClebersonMachi\BoletoSicoob::criarArquivoRemessa($boletos);
 ```
 
 ## Softwares Utilizados

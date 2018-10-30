@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests;
+namespace ClebersonMachi\Tests;
 
-use BoletoSicoob;
-use IntegracaoFinanceiro;
+use ClebersonMachi\BoletoSicoob;
+use ClebersonMachi\IntegracaoFinanceiro;
 use org\bovigo\vfs\vfsStream;
 use Orchestra\Testbench\TestCase;
 
@@ -41,8 +41,8 @@ class BoletoSicoobTest extends TestCase
 
     /**
      * @test
-     * @covers \BoletoSicoob::__construct
-     * @covers \BoletoSicoob::gerarArquivo
+     * @covers \ClebersonMachi\BoletoSicoob::__construct
+     * @covers \ClebersonMachi\BoletoSicoob::gerarArquivo
      */
     public function gerarArquivoSemBoletosRetornaVazio()
     {
@@ -53,9 +53,9 @@ class BoletoSicoobTest extends TestCase
 
     /**
      * @test
-     * @covers \IntegracaoFinanceiro::mkFinanceiroModel
-     * @covers \BoletoSicoob::__construct
-     * @covers \BoletoSicoob::gerarArquivo
+     * @covers \ClebersonMachi\IntegracaoFinanceiro::mkFinanceiroModel
+     * @covers \ClebersonMachi\BoletoSicoob::__construct
+     * @covers \ClebersonMachi\BoletoSicoob::gerarArquivo
      */
     public function gerarArquivoComIntegracaoFinanceiro()
     {
@@ -69,8 +69,8 @@ class BoletoSicoobTest extends TestCase
 
     /**
      * @test
-     * @covers \BoletoSicoob::__construct
-     * @covers \BoletoSicoob::mkNossoNumero
+     * @covers \ClebersonMachi\BoletoSicoob::__construct
+     * @covers \ClebersonMachi\BoletoSicoob::mkNossoNumero
      * @expectedException \ErrorException
      */
     public function mkNossoNumeroDisparaExcessaoParaNaoNumericos()
@@ -80,8 +80,8 @@ class BoletoSicoobTest extends TestCase
 
     /**
      * @test
-     * @covers \BoletoSicoob::__construct
-     * @covers \BoletoSicoob::mkNossoNumero
+     * @covers \ClebersonMachi\BoletoSicoob::__construct
+     * @covers \ClebersonMachi\BoletoSicoob::mkNossoNumero
      */
     public function mkNossoNumeroRetornaString()
     {

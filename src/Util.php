@@ -1,5 +1,7 @@
 <?php
 
+namespace ClebersonMachi;
+
 trait Util
 {
 

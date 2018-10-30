@@ -4,12 +4,12 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "": "src/"
+            "ClebersonMachi\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "ClebersonMachi\\Tests\\": "tests/"
         }
     },
     "license": "MIT",

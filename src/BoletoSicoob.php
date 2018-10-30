@@ -1,5 +1,9 @@
 <?php
 
+namespace ClebersonMachi;
+
+use DateTime;
+
 /**
 * Boleto Sicoob
 */
@@ -54,7 +58,6 @@ class BoletoSicoob
 
     /**
     * Inicia a classe
-    * --------------------------------------------------------------------
     */
 	public function __construct(
 		string $basePath = null,
