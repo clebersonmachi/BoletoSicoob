@@ -1,0 +1,22 @@
+{
+    "name": "clebersonmachi/boletosicoob",
+    "description": "Gerar arquivo de remessa (Cobrança) para o Boleto da Sicoob",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "ClebersonMachi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ClebersonMachi\\Tests\\": "tests/"
+        }
+    },
+    "license": "MIT",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^7.4",
+        "mikey179/vfsStream": "^1.6",
+        "orchestra/testbench": "~3.0"
+    }
+}
