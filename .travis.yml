@@ -1,8 +1,6 @@
 language: php
 
 php:
-  # - 5.6
-  - 7.0
   - 7.1
   - 7.2
   - nightly
@@ -14,6 +12,7 @@ matrix:
 before_script:
   - composer selfupdate
   - composer install --dev --prefer-dist
+  - mkdir -p build/logs
 
 script:
   - ./vendor/bin/phpunit --coverage-clover build/logs/clover.xml
